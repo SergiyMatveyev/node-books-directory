@@ -2,8 +2,9 @@
 
 ## Command
 
-Prod: `npm start`;
-Dev: `npm run start::dev`;
+Prod: `npm start`
+
+Dev: `npm run start::dev`
 
 ## Technologies
 
