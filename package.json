@@ -1,0 +1,27 @@
+{
+  "name": "book-directory",
+  "version": "1.0.0",
+  "description": "Node.js test projects",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start::dev": "nodemon app.js"
+  },
+  "keywords": [
+    "Express",
+    "MVC",
+    "MongoDB",
+    "body-parser",
+    "nodemon"
+  ],
+  "author": "Sergiy Matveyev",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "mongodb": "^4.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
