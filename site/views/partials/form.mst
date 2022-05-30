@@ -1,0 +1,18 @@
+<form class="" id="bookForm" method="post">
+<input type="hidden" name="bookId" id="bookId">
+<div class="row">
+    <div class="input-field col s4">
+    <label for="bookName">Book name</label>
+    <input type="text" name="bookName" class="validate" id="bookName" required>
+    </div>
+    <div class="input-field col s4">
+    <label for="bookYear">Book year</label>
+    <input type="text" name="bookYear" class="validate" id="bookYear" required>
+    </div>
+    <div class="input-field col s4">
+    <label for="bookGenre">Book genre</label>
+    <input type="text" name="bookGenre" class="validate" id="bookGenre" required>
+    </div>
+</div>
+<button type="submit" class="btn waves-effect waves-light">Submit</button>
+</form>

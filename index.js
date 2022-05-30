@@ -11,7 +11,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 mongoUtil
   .connectToServer()
-  .then((result) => {
+  .then(() => {
+    require("./site")(app);
     require("./api/routes")(app);
     app.listen(port, () => {
       console.log("We are live on " + port);

@@ -10,3 +10,5 @@ Dev: `npm run start::dev`
 
 1. MongoDB
 2. Express
+3. nodemon
+4. mustache

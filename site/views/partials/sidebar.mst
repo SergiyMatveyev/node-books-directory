@@ -1,0 +1,25 @@
+<form>
+    <ul class="collection with-header">
+    <li class="collection-header"><h4>Books' years</h4></li>
+    {{#years}}  
+    <li class="collection-item">
+        <label>
+        <input name="year" type="checkbox" class="filled-in" value="{{.}}" />
+        <span>{{.}}</span>
+        </label>
+    </li>
+    {{/years}}
+    </ul>
+    <ul class="collection with-header">
+    <li class="collection-header"><h4>Books' genres</h4></li>
+    {{#genres}}  
+    <li class="collection-item">
+        <label>
+        <input name="genre" type="checkbox" class="filled-in" value="{{.}}" />
+        <span>{{.}}</span>
+        </label>
+    </li>
+    {{/genres}}
+    </ul>
+<button type="submit" class="btn waves-effect waves-light">Filter</button>
+</form>

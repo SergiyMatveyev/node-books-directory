@@ -1,0 +1,22 @@
+<table id="bookTable" class="striped">
+<thead>
+    <tr>
+    <th scope="col">Name</th>
+    <th scope="col">Year</th>
+    <th scope="col">Genre</th>
+    <th scope="col"></th>
+    <th scope="col"></th>
+    </tr>
+</thead>
+<tbody>
+{{#books}}  
+    <tr data-book-id="{{_id}}">
+    <td>{{name}}</td>
+    <td>{{year}}</td>
+    <td>{{genre}}</td>
+    <td><button type="button" class="waves-effect waves-light btn-small blue button-edit">Edit</button></td>
+    <td><button type="button" class="waves-effect waves-light btn-small red accent-4 button-delete">Delete</button></td>
+    </tr>
+{{/books}}
+</tbody>
+</table>

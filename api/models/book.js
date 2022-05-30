@@ -8,9 +8,13 @@ module.exports = class Book {
     this.genre = genre;
   }
 
-  static async getAllBooks() {
+  static async getAllBooks(searchParams) {
+    let search = {};
+    if (searchParams) {
+      search.name = { $regex: searchParams };
+    }
     const collection = getDb().collection("books");
-    const books = collection.find({}).toArray();
+    const books = collection.find(search).toArray();
     return books;
   }
 
